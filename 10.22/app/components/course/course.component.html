@@ -1,0 +1,48 @@
+<!-- <hr>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+
+    </div>
+    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8"></div>
+    <ul>
+      <li *ngFor="let acourse of acourses;">
+        <a [routerLink]="['/course',acourse.id]">
+          <img src="{{acourse.images}}" alt="">
+          <div style="position:relative">
+            <span>{{acourse.className}}</span>
+            <span style="position:absolute;right:0px;">{{acourse.person}}</span>
+          </div>
+        </a>
+      </li>
+    </ul>
+    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+  </div>
+  </div>
+  
+</div> -->
+<!-- 第一种办法使用absolute，
+div {
+    position: relative;
+    span {
+        position: absolute;
+        right: 0;
+    }
+} -->
+<hr>
+<div class="container">
+  <div class="row">
+      <ul>
+        <li *ngFor="let acourse of acourses;" class="col-sm-4">
+          <a [routerLink]="['/course',acourse.id]">
+            <img src="{{acourse.images}}" alt="">
+            <div style="display: flex;justify-content: space-between;">
+              <span>{{acourse.className}}</span>
+              <span>{{acourse.person}}</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+</div>
+<!-- 第二种办法，使用flex布局 -->

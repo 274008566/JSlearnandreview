@@ -1,0 +1,91 @@
+.container{
+    width: 1022px;
+    height: 460px;
+    margin-top: 20px;
+    border: 1px dashed black;
+   
+}
+.left{
+    width: 175px;
+    height: 460px;
+    float: left;
+}
+.left-top{
+    width: 175px;
+    height: 175px;
+}
+.left-bottom{
+    width: 175px;
+    height: 285px;
+
+}
+.container>.left>.left-bottom>p:nth-child(1) {
+    font-size: 20px;
+    text-align: center;
+}
+.container>.left>.left-bottom>p:nth-child(2) {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+}
+.container>.left>.left-bottom>p:nth-child(3) {
+    font-size: 10px;
+    text-align: center;
+}
+.container>.left>.left-bottom>hr {
+    margin-left: 20px;
+    width: 150px;
+    opacity: 0.2;
+    margin-top: 10px;
+}
+
+.container>.left>.left-bottom>ul>li {
+    width: 175px;
+    height: 30px;
+    float:right;
+}
+.container>.left>.left-bottom>ul>li:hover{
+    border-radius:25px;
+    background-color: red;
+    cursor: pointer;
+}
+.container>.left>.left-bottom>ul>li>span {
+    float:right;
+    font-size: 20px;
+}
+
+.one{
+    margin-left: 55px;
+}
+.right{
+    width: 780px;
+    height: 420px;
+    padding: 20px 32px;
+    box-shadow: 2px 2 px 20px rgba(0,0,0,0,0.06);
+    float: left;
+    border: 1px dashed black;
+    border-bottom:none;
+    border-top:none;
+    border-right:none;
+}
+.right-top{
+    height: 65px;
+    width: 650px;
+}
+.container>.right>.right-top>.tasks>ul>li{
+    float: left;
+    margin-left: 40px;
+    cursor: pointer;
+}
+.right-bottom{
+    height: (460-65)px;
+    width: 650px;
+}
+.input-group {
+    width: 250px;
+    left: 20px;
+    top: -5px;
+}
+#btn{
+    height: 34px;
+}
